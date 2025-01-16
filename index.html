@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" href="logo.png" type="logo-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="quiz-app">
+            <!-- Header with app name and logo -->
+            <div class="header">
+                <h1>Quiz App</h1>
+                <a href="index.html"><img src="logo.png" alt="Quiz app logo"></a>
+            </div>
+
+            <!-- Welcome note -->
+            <div class="welcome-note">
+                <h2>Welcome to the Quiz App!</h2>
+            </div>
+
+            <!-- User name input field -->
+            <div class="user-input">
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                <button onclick="EnterName()">Enter</button><br>
+            </div>
+            <p id="User_greeting"></p>
+
+        </div>
+
+        <!-- Quiz category selection -->
+        <div class="category-selection">
+            <h2>Select Quiz Category:</h2>
+            <div id="category-buttons">
+                <button onclick="selectCategory('Pipes and Cisterns')">Pipes and Cisterns</button>
+                <button onclick="selectCategory('Probability')">Probability</button>
+                <button onclick="selectCategory('Problems on Age')">Problems on Age</button>
+                <button onclick="selectCategory('Profit and Loss')">Profit and Loss</button>
+            </div>
+            <p id="category_selected"></p>
+            <button id="start-button" onclick="startQuiz()" disabled>Start Quiz</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

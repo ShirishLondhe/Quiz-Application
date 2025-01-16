@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="result-container">
+
+        <h1>Quiz Result</h1>
+
+        <!-- Participant Name -->
+        <div class="result-item">
+            <label for="participant-name">Name of Participant:</label>
+            <span id="participant-name"></span>
+        </div>
+
+        <!-- Total Time Taken -->
+        <div class="result-item">
+            <label for="total-time-taken">Total Time Taken:</label>
+            <span id="total-time-taken"></span>
+        </div>
+
+        <!-- Total Questions -->
+        <div class="result-item">
+            <label for="total-questions">Total Questions:</label>
+            <span id="total-questions"></span>
+        </div>
+
+        <!-- Attempted Questions -->
+        <div class="result-item">
+            <label for="attempted-questions">Attempted Questions:</label>
+            <span id="attempted-questions"></span>
+        </div>
+
+        <!-- Correct Questions -->
+        <div class="result-item">
+            <label for="correct-questions">Correct Questions:</label>
+            <span id="correct-questions"></span>
+        </div>
+
+        <!-- Wrong Questions -->
+        <div class="result-item">
+            <label for="wrong-questions">Wrong Questions:</label>
+            <span id="wrong-questions"></span>
+        </div>
+
+        <!-- Score in Percentage -->
+        <div class="result-item">
+            <label for="score-percentage">Percentage:</label>
+            <span id="score-percentage"></span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="result-actions">
+            <button id="start-again" onclick="startAgain()">Start Again</button>
+            <button id="go-to-home" onclick="goToHome()">Go to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

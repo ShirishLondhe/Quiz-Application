@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="questions.js" defer></script>
+</head>
+
+<body>
+    <div class="quiz-container">
+
+        <!-- Dynamic Category Title -->
+        <h2 id="category-title"></h2>
+
+        <!-- Question Container -->
+        <div id="question-container">
+
+            <!-- Timer Section -->
+            <div class="timer">
+                <span id="timer"></span>
+            </div>
+
+            <!-- Score Section -->
+            <div class="score">
+                Score: <span id="score">0</span>
+            </div>
+
+            <!-- Question Counter -->
+            <div class="current-question">
+                <span id="current-question">1</span> / <span id="total-questions">10</span> <br>
+            </div>
+
+            <!-- Dynamic Question -->
+            <div class="question">
+                <p id="question"></p>
+            </div>
+
+            <!-- Dynamic Options -->
+            <div class="options" id="options"></div>
+
+
+            <!-- Answer/Feedback Section -->
+            <!-- <p id="answer"></p> -->
+            <div id="message" e;"></div>
+
+            <!-- Action Buttons -->
+            <button id="nextButton" onclick="nextQuestion()">Next Question</button><br>
+            <button id="submit-quiz" onclick="submitQuiz()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
